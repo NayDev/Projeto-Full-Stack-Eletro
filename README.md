@@ -1,4 +1,7 @@
-# Projeto em desenvolvimento durante o curso desenvolvedor Full Stack Recode Pro 2020.
+<h1 align="center">
+  Projeto em desenvolvimento durante o curso desenvolvedor Full Stack Recode Pro 2020.
+<h1 align="center">
+
 
 # 🚧 Full Stack Eletro em construção... 🚧
 
