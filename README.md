@@ -22,6 +22,7 @@ As seguintes ferramentas foram usadas na construção do projeto até o momento:
 * HTML
 * CSS
 * JavaScript
+* MySQL
 
 # Como executar o projeto
 
