@@ -60,14 +60,17 @@
             <br/><br/>
             <input id="button" type="submit" name="submit" value="Enviar">
         </form>
-
+        <h2>Lista de Mensagem</h2>
+        <hr />
+       
         <?php
+        
                 $sql = "select * from comentarios";
                 $result = $conn->query($sql);
 
                 if($result->num_rows > 0){
                     while($rows = $result->fetch_assoc()){
-                        echo "Data: ", $rows['data'], "<br />";
+                        echo "Data: ", date('d/m/Y H:i:s', strtotime($rows['data'])); "<br />";
                         echo "Nome: ", $rows['nome'], "<br />";
                         echo "Mensagem: ", $rows['msg'], "<br />";
                         echo "<hr />";
