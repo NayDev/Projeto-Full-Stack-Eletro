@@ -22,7 +22,9 @@ As seguintes ferramentas foram usadas na construção do projeto até o momento:
 * HTML
 * CSS
 * JavaScript
+* Php
 * MySQL
+* Bootstrap v4.5
 
 # Como executar o projeto
 
