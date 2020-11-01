@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -34,19 +35,6 @@ hr {
     color: white;
     text-decoration: none;
     border-bottom: 3px solid white;
-}
-
-.lojas {
-    background-image: url('../img/mapa.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-}
-
-.box_lojas {
-    text-align: center;
 }
 
 .produtos {
@@ -114,12 +102,12 @@ hr {
     align-items: flex-start;
 }
 
-.box_fale_conosco #email {
-    width: 10%;
+#email {
+    width: 60px;
 }
 
-.box_fale_conosco #whats {
-    width: 30%;
+#whats {
+    width: 120px;
 }
 
 .box_fale_conosco {
@@ -157,3 +145,26 @@ footer#rodape {
 footer#rodape img {
     width: 300px;
 }
+.navbar {
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 89%);
+}
+.navbar-nav,
+.mr-auto {
+flex: 1;
+margin: auto !important;
+display: flex;
+justify-content: space-around;
+}
+.container-fluid,
+.contato{
+text-align: center;
+}
+.dropdown-menu {
+    cursor: pointer;
+}
+.dropdown-toggle {
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 89%);
+}
+
