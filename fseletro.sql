@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 28-Out-2020 às 18:39
+-- Tempo de geração: 01-Nov-2020 às 01:57
 -- Versão do servidor: 10.4.14-MariaDB
 -- versão do PHP: 7.3.22
 
@@ -40,7 +40,33 @@ CREATE TABLE `comentarios` (
 
 INSERT INTO `comentarios` (`id_comentario`, `nome`, `msg`, `data`) VALUES
 (5, 'Maria', 'Ola como vai?', '2020-10-24 20:51:31'),
-(6, 'Nayara Suelen Fernandes Lopes', 'Olá, Teste.', '2020-10-28 09:16:35');
+(9, 'Mit', 'Oi mit', '2020-10-28 18:37:43'),
+(11, 'CRIS', 'OLA', '2020-10-31 17:26:22');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `lojas`
+--
+
+CREATE TABLE `lojas` (
+  `id_loja` int(11) NOT NULL,
+  `cidade` varchar(200) NOT NULL,
+  `endereco` varchar(200) NOT NULL,
+  `numero` int(11) NOT NULL,
+  `andar` int(11) DEFAULT NULL,
+  `bairro` varchar(100) NOT NULL,
+  `telefone` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `lojas`
+--
+
+INSERT INTO `lojas` (`id_loja`, `cidade`, `endereco`, `numero`, `andar`, `bairro`, `telefone`) VALUES
+(1, 'Rio de Janeiro', 'Avenida Presidente Vargas', 5000, 10, 'Centro', '(21) 3333-3333'),
+(2, 'São Paulo', 'Avenida Paulista', 985, 3, 'Jardins', '(11) 4444-4444'),
+(3, 'Santa Catarina', 'Rua Major Ávila', 370, 1, 'Vila Mariana', '(55) 5555-5555');
 
 -- --------------------------------------------------------
 
@@ -82,15 +108,15 @@ INSERT INTO `produtos` (`idproduto`, `categoria`, `descricao`, `imagem`, `preco`
 (2, 'geladeira', 'Geladeira Frost Free Brastemp Branca 375 litros.', './img/Geladeira Frost Free Brastemp Branca 375 litros.jpg', '2068.60', '1910.90'),
 (4, 'fogao', 'Fogão de Piso 4 Bocas Atlas Monaco com Acedimento Automático', './img/Fogão de Piso 4 Bocas Atlas Monaco com Acedimento Automático.jpeg', '609.90', '519.70'),
 (5, 'fogao', 'Fogão 4 Bocas Consul Inox com Mesa de Vidro', './img/Fogão 4 Bocas Consul Inox com Mesa de Vidro.jpg', '1209.90', '1129.00'),
-(6, 'microondas', 'Micro-ondas Consul com Função Tira Odor Inox - 32 Litros', './img/Micro-ondas Consul 32 Litros Inox 220v.jpg', '580.90', '479.88'),
+(6, 'microondas', 'Micro-ondas Consul com Função Tira Odor', './img/Micro-ondas Consul 32 Litros Inox 220v.jpg', '580.90', '479.88'),
 (7, 'microondas', 'Microondas 25L Espelhado Philco 220v', './img/Microondas 25L Espelhado Philco 220v.jpg', '508.70', '464.53'),
 (8, 'microondas', 'Forno de Microondas Eletrolux 20L Branco', './img/Forno de Microondas Eletrolux 20L Branco.jpg', '459.90', '436.05'),
 (9, 'lavadoraDeRoupas', 'Lavadora de Roupas Brastemp 11 kg', './img/Lavadora de Roupas Brastemp 11 kg com Turbo Performance Branca.jpg', '1699.00', '1214.10'),
 (10, 'lavadoraDeRoupas', 'Lavadora de Roupas Philco Inverter 12KG', './img/Lavadora de Roupas Philco Inverter 12KG.jpg', '6389.00', '5019.00'),
-(11, 'lavaLoucas', 'Lava-Louças Electrolux Inox com 10 Serviços, Painel Blue Touch', './img/Lava-Louças Electrolux Inox com 10 Serviços, 06 Programas de Lavagem e Painel Blue Touch.jpg', '3599.00', '2799.90'),
-(12, 'lavaLoucas', 'Lava Louça Compacta 8 Serviços Branca 127V Brastem', './img/Lava Louça Compacta 8 Serviços Branca 127V Brastemp.jpg', '1970.50', '1730.61'),
-(13, 'geladeira', 'Geladeira Frost Free Brastemp Side Inverse 540 litros', './img/Geladeira Frost Free Brastemp Side Inverse 540 litros.jpg', '6389.00', '5019.00'),
-(14, 'geladeira', 'Geladeira Frost Free Consul Prata 340 litros', './img/Geladeira Frost Free Consul Prata 340 litros.jpg', '2199.90', '2069.00');
+(11, 'lavaLoucas', 'Lava-Louças Electrolux Inox com 10', './img/Lava-Louças Electrolux Inox com 10 Serviços, 06 Programas de Lavagem e Painel Blue Touch.jpg', '3599.00', '2799.90'),
+(12, 'lavaLoucas', 'Lava Louça Compacta 8 Serviços Branca', './img/Lava Louça Compacta 8 Serviços Branca 127V Brastemp.jpg', '1970.50', '1730.61'),
+(13, 'geladeira', 'Geladeira Frost Free Inverse 540 litros', './img/Geladeira Frost Free Brastemp Side Inverse 540 litros.jpg', '6389.00', '5019.00'),
+(14, 'geladeira', 'Geladeira Frost Free Prata 340 litros', './img/Geladeira Frost Free Consul Prata 340 litros.jpg', '2199.90', '2069.00');
 
 --
 -- Índices para tabelas despejadas
@@ -101,6 +127,12 @@ INSERT INTO `produtos` (`idproduto`, `categoria`, `descricao`, `imagem`, `preco`
 --
 ALTER TABLE `comentarios`
   ADD PRIMARY KEY (`id_comentario`);
+
+--
+-- Índices para tabela `lojas`
+--
+ALTER TABLE `lojas`
+  ADD PRIMARY KEY (`id_loja`);
 
 --
 -- Índices para tabela `pedidos`
@@ -122,7 +154,13 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT de tabela `comentarios`
 --
 ALTER TABLE `comentarios`
-  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT de tabela `lojas`
+--
+ALTER TABLE `lojas`
+  MODIFY `id_loja` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `pedidos`
