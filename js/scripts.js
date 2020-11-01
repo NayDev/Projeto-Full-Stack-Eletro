@@ -30,3 +30,16 @@ let destaque = (imagem) => {
     }
 
 };
+
+function carregar_saudacao(){
+    data = new Date();
+    hora = data.getHours();
+
+    if(hora < 12){
+      document.getElementById("msg_abertura").innerHTML = "Bom dia!!! Seja Bem vindo(a)";
+    } else if(hora < 18){
+      document.getElementById("msg_abertura").innerHTML = "Boa tarde!!! Seja Bem vindo(a)";
+    } else{
+      document.getElementById("msg_abertura").innerHTML = "Boa noite!!! Seja Bem vindo(a)";
+    }
+  }
