@@ -11,7 +11,7 @@
  * É um projeto que está sendo desenvolvido durante o curso de Desenvolvedor Full Stack na Recode Pro 2020.
  
 <p align="center">
-  <img src="img/projeto.png" width="550" height="300">
+  <img src="img/projeto.jpeg" width="550" height="300">
 <p align="center">
 
 
