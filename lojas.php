@@ -25,10 +25,13 @@
 <body>
   <?php include_once('menu.html') ?>
   <header>
-      <h1 class="mt-2">Nossas lojas</h1>
+      <h1 class="">Nossas lojas</h1>
   </header>
   <hr/>
-  <section class="container-fluid d-flex flex-column">
+  <section class="container my-5">
+    <div class="row flex-column flex-sm-row align-items-center">
+
+    
     <?php
       $sql = "select * from lojas";
       $result = $conn->query($sql);
@@ -36,7 +39,7 @@
       if($result->num_rows > 0){
         while($rows = $result->fetch_assoc()){
     ?>
-          <div>
+          <div class="col text-center my-4">
             <h3><?php echo $rows["cidade"]; ?></h3>
             <p><?php echo $rows["endereco"]; ?></p>
             <p><?php echo "Número ", $rows["numero"]; ?></p>
@@ -50,6 +53,7 @@
         echo "Nenhum produto cadastrado!!!";
       }
     ?>    
+    </div>
   </section>
   <?php
     include('rodape.html');

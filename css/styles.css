@@ -8,14 +8,7 @@ hr {
     width: 100%;
 }
 
-.menu {
-    background-color: #4e90ce;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    padding: 3px;
-}
+
 
 .logo {
     background-image: url('../img/logo1.png');

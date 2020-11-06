@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 01-Nov-2020 às 01:57
+-- Tempo de geração: 06-Nov-2020 às 05:54
 -- Versão do servidor: 10.4.14-MariaDB
 -- versão do PHP: 7.3.22
 
@@ -106,7 +106,7 @@ CREATE TABLE `produtos` (
 
 INSERT INTO `produtos` (`idproduto`, `categoria`, `descricao`, `imagem`, `preco`, `precofinal`) VALUES
 (2, 'geladeira', 'Geladeira Frost Free Brastemp Branca 375 litros.', './img/Geladeira Frost Free Brastemp Branca 375 litros.jpg', '2068.60', '1910.90'),
-(4, 'fogao', 'Fogão de Piso 4 Bocas Atlas Monaco com Acedimento Automático', './img/Fogão de Piso 4 Bocas Atlas Monaco com Acedimento Automático.jpeg', '609.90', '519.70'),
+(4, 'fogao', 'Fogão de Piso 4 Bocas Acedimento Automático', './img/Fogão de Piso 4 Bocas Atlas Monaco com Acedimento Automático.jpeg', '609.90', '519.70'),
 (5, 'fogao', 'Fogão 4 Bocas Consul Inox com Mesa de Vidro', './img/Fogão 4 Bocas Consul Inox com Mesa de Vidro.jpg', '1209.90', '1129.00'),
 (6, 'microondas', 'Micro-ondas Consul com Função Tira Odor', './img/Micro-ondas Consul 32 Litros Inox 220v.jpg', '580.90', '479.88'),
 (7, 'microondas', 'Microondas 25L Espelhado Philco 220v', './img/Microondas 25L Espelhado Philco 220v.jpg', '508.70', '464.53'),

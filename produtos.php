@@ -56,7 +56,7 @@
         if($result->num_rows > 0){
           while($rows = $result->fetch_assoc()){
       ?>
-            <div class="box_produto mx-auto" style="display: block;" id="<?php echo $rows["categoria"]; ?>" >
+            <div class="box_produto col-lg-3 col-md-4 col-sm-6 mx-auto" style="display: block;" id="<?php echo $rows["categoria"]; ?>" >
               <div class="box_img">
                 <img src="<?php echo $rows["imagem"]; ?>" alt="Geladeira 540 Litros" width="150px" onclick="destaque(this)">
               </div>
